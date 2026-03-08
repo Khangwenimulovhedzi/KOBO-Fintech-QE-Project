@@ -1,3 +1,5 @@
+-- This query checks whether transaction recorded in the TransactionLedger table have a corresponding entry in the DigitalVouchers table.
+
 SELECT 
     tl.EntryID,
     tl.WalletID,
@@ -9,5 +11,3 @@ FROM TransactionLedger tl
 LEFT JOIN DigitalVouchers dv
     ON tl.EntryID = dv.EntryID
 WHERE dv.EntryID IS NULL;
-
-select * from DigitalVouchers

@@ -23,3 +23,11 @@ SELECT w.WalletID, w.Balance, u.FullName
 FROM KoboFintech.dbo.Wallets w
 JOIN KoboFintech.dbo.Users u ON w.UserID = u.UserID
 WHERE w.WalletID = 10;
+
+
+-- Select Walletid, balance 
+-- from Wallets 
+-- where walletid = 10;
+
+SELECT * from digitalvouchers
+where EntryID = '0d0c1b7f-5cbf-40c2-a502-54a33db1ce29';
