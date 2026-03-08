@@ -9,25 +9,97 @@
   "item": [
     {
       "name": "GetWallet Details ByID",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
       "request": {
         "method": "GET",
-        "header": []
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"walletId\": 10,\r\n  \"productId\": 1,\r\n  \"reference\": \"TASK2-LOWBAL-001\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/v1/wallets/10",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "v1",
+            "wallets",
+            "10"
+          ]
+        }
       },
       "response": []
     },
     {
       "name": "Issue Digital voucher",
       "request": {
-        "method": "GET",
-        "header": []
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"walletId\": 10,\r\n  \"productId\": 1,\r\n  \"reference\": \"TASK2-VALID-001\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/v1/distribution/issue-voucher",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "v1",
+            "distribution",
+            "issue-voucher"
+          ]
+        }
       },
       "response": []
     },
     {
       "name": "successful purchase",
       "request": {
-        "method": "GET",
-        "header": []
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"walletId\": 1,\r\n  \"productId\": 1,\r\n  \"reference\": \"TASK2-VALID-001\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/v1/distribution/issue-voucher",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "v1",
+            "distribution",
+            "issue-voucher"
+          ]
+        }
       },
       "response": []
     }
