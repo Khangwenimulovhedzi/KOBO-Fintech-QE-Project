@@ -1,0 +1,35 @@
+{
+  "info": {
+    "_postman_id": "0ac865a5-9405-4b94-a07e-ebcc9565b330",
+    "name": "KOBO Fintech QE Project",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "52064850",
+    "_collection_link": "https://go.postman.co/collection/52064850-0ac865a5-9405-4b94-a07e-ebcc9565b330?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "GetWallet Details ByID",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "Issue Digital voucher",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "successful purchase",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    }
+  ]
+}
